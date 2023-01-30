@@ -1,0 +1,20 @@
+---
+ansible_user : adm
+ansible_password : qaz123
+ansible_connection : winrm
+ansible_winrm_server_cert_validation : ignore
+ansible_port : 5985
+
+OASYSSTARTCOM_OASYS : ""
+OASYSSTARTCOM_ComQualifier : ""
+Common_LoadBatchSize : 500
+AutomaticBankingRoutine_SMTPPort : 11111
+
+
+proxyes :
+- {'proxy_name': '64 bit', 'server' : '2008 64bit', 'userId' : 'sombd', 'password' : 'QAZ', 'port' : '55', 'domain' : 'wwww'}
+
+
+tabeles :
+- {'name' : 'DCCC', 'keys' : 'DATE1,TILL,NUMB', 'version' : '1'}
+- {'name' : 'STKLOG', 'keys' : 'NUMB,ESEQ', 'version' : '1'}
