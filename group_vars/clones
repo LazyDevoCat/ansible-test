@@ -1,0 +1,22 @@
+---
+ansible_user : Administrator
+ansible_password : qaz123
+ansible_connection : winrm
+ansible_winrm_server_cert_validation : ignore
+ansible_port : 5985
+
+win_group : VARIBLE_from_CLONES_group_1234
+
+OASYSSTARTCOM_OASYS : ""
+OASYSSTARTCOM_ComQualifier : ""
+Common_LoadBatchSize : 500
+AutomaticBankingRoutine_SMTPPort : 111
+
+
+proxyes :
+- {'proxy_name': 'clone', 'server' : 'Some server', 'userId' : 'sombd', 'password' : 'QAZ', 'port' : '55', 'domain' : 'wwww'}
+
+
+tabeles :
+- {'name' : 'DCCC', 'keys' : 'DATE1,TILL,NUMB', 'version' : '1'}
+- {'name' : 'STKLOG', 'keys' : 'NUMB,ESEQ', 'version' : '1'}
