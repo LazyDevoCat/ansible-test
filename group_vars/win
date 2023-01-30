@@ -1,0 +1,30 @@
+---
+ansible_user : Administrator
+
+ansible_password : qaz123
+ansible_connection : winrm
+ansible_winrm_server_cert_validation : ignore
+ansible_port : 5985
+
+win_group : test_VARIBLE_from_host_group
+
+OASYSSTARTCOM_OASYS : ""
+OASYSSTARTCOM_ComQualifier : ""
+Common_LoadBatchSize : 500
+AutomaticBankingRoutine_SMTPPort : 222
+
+
+proxy_name : ['Local']
+server: ['default']
+userId : ['commomapi']
+password : ['pass']
+port : ['52']
+domain : ['kmp']
+
+proxyes :
+- {'proxy_name': 'Test', 'server' : 'default', 'userId' : 'win', 'password' : 'pass', 'port' : '55', 'domain' : 'kmp'}
+- {'proxy_name': 'sometest', 'server' : 'winwin', 'userId' : 'admine', 'password' : 'secretpass', 'port' : '1222', 'domain' : 'win.group.com'}
+
+
+tabeles :
+- {'name' : 'STKLOG', 'keys' : 'DATE1,TILL,[TRAN],NUMB,ESEQ', 'version' : '1'}
