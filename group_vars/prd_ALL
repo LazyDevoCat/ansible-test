@@ -1,0 +1,8 @@
+---
+Common_PostCodeLookUpService : https://pals.preprod.wickes.systems/v1
+AutomaticBankingRoutine_SMTPPort : 555
+Common_IVEConnectionString : Data Source=WX0IVE01;Initial Catalog=Updates;Integrated Security=True
+
+NightlyRoutineMonitor_StoreOpenStartTime : 09:26:00
+NightlyRoutineMonitor_StoreServer : SRV8085
+NightlyRoutineMonitor_StoresQuery : select 'SRV' + convert(varchar,Id) As Store from Stores where [Status] in ('L','P','T','W') AND IsClosed=0 AND Id &lt; {0}
