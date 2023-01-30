@@ -1,0 +1,9 @@
+[win]
+win2008 ansible_host=172.27.197.81 var_hostfile=20-Dec-2022
+
+[clones]
+clone   ansible_host=172.27.192.100  var_hostfile=26-Dec-2022
+
+[prd_ALL:children]
+win
+clones

@@ -1,0 +1,21 @@
+---
+- name: Test tasks
+  hosts: all
+
+  vars:
+        varible: Done
+
+
+
+  tasks:
+
+
+          - name: Testing varibles
+            debug:
+                    msg: "The job is {{ varible }} on {{ ansible_nodename }}"
+
+          - name: Test
+            debug:
+                    msg: "The job is {{ ansible_nodename }} on {{ ansible_architecture }}"
+
+          
